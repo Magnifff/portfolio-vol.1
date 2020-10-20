@@ -65,6 +65,10 @@ object-fit: cover;
    text-align: left;
 }
 
+h3 {
+  text-align: left;
+  }
+
 @media only screen and (max-width:800px) {
   .main {
     width: 80%;
