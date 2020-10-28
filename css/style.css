@@ -17,9 +17,11 @@ body {
   padding: 15px 13px;
   text-decoration: none;
   font-size: 15px;
+  background-color: #333;
+  color: white;
 }
 
-.topnav a.active {
+.topnav a:active {
   background-color: #333;
   color: white;
 }
@@ -27,13 +29,14 @@ body {
 html,body{
   margin:0;
   height:100%;
+  background-image: url('../image/Dark.jpg');
+  background-size: cover;
 }
 
-img{
-display:block;
-width:100%; height:100%;
-object-fit: cover;
-}
+picture{
+    width: 100px;
+    height: 100px;
+  }
 
 .container {
   position: relative;
@@ -41,7 +44,7 @@ object-fit: cover;
 /*tekstblock "welkomtekst"*/
 .text-block {
   position: absolute;
-  bottom: 180px;
+  bottom: 90px;
   right: 130px;
   background-color: #262626;
   color: white;
@@ -56,7 +59,7 @@ object-fit: cover;
 
 }
 /*footer*/
-.footer {
+footer {
    position: fixed;
    left: 0;
    bottom: 0;
@@ -64,20 +67,4 @@ object-fit: cover;
    background-color: #262626;
    color: white;
    text-align: left;
-}
-
-/*responsive*/
-@media only screen and (max-width:800px) {
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-    .menu, .main, .right {
-    width: 100%;
-  }
 }
