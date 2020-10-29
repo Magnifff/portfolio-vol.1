@@ -19,6 +19,10 @@ body {
   font-size: 15px;
   background-color: #333;
   color: white;
+  transition:0.2s;
+}
+.topnav a:hover {
+  opacity:0.4;
 }
 
 .topnav a:active {
@@ -43,7 +47,7 @@ picture{
 }
 /*tekstblock "welkomtekst"*/
 .text-block {
-  position: absolute;
+  position:absolute;
   bottom: 90px;
   right: 130px;
   background-color: #262626;
@@ -55,8 +59,13 @@ picture{
   height: 430px;
   padding: 50px;
   border: 1px solid #000000;
+  border-radius:10px;
+  transition:0.5s;
+  box-shadow: black 7px 7px 7px;
   box-sizing: border-box;
-
+}
+.text-block:hover {
+  transform: translateY(-19px);
 }
 /*footer*/
 footer {
@@ -67,4 +76,11 @@ footer {
    background-color: #262626;
    color: white;
    text-align: left;
+   padding-left:10px;
+}
+@media (max-width:500px) {
+  .text-block {
+
+  }
+
 }
