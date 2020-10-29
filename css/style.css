@@ -61,7 +61,7 @@ picture{
   border: 1px solid #000000;
   border-radius:10px;
   transition:0.5s;
-  box-shadow: black 10px 10px 10px;
+  box-shadow: black 7px 7px 7px;
   box-sizing: border-box;
 }
 .text-block:hover {
