@@ -47,13 +47,11 @@ picture{
 }
 /*tekstblock "welkomtekst"*/
 .text-block {
-  position:absolute;
+  position: fixed;
   bottom: 90px;
   right: 130px;
   background-color: #262626;
   color: white;
-  padding-left: 90px;
-  padding-right: 90px;
 
   width: 400px;
   height: 430px;
@@ -67,6 +65,7 @@ picture{
 .text-block:hover {
   transform: translateY(-19px);
 }
+
 /*footer*/
 footer {
    position: fixed;
@@ -79,9 +78,9 @@ footer {
    padding-left:10px;
 }
 /*responsive*/
-@media (max-width:500px) {
-  .text-block {
-
-  }
-
+@media only screen and (max-width: 600px) {
+.text-block {
+float: right;
+  width: 60%;
+  padding: 20px;
 }
