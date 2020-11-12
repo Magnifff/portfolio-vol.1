@@ -29,21 +29,19 @@ body {
   background-color: #333;
   color: white;
 }
-/*background image indexpage*/
+
+/*background image*/
 html,body{
   margin:0;
   height:100%;
-  background-image: url('../image/Dark.jpg');
+  background-color: #00bfff;
   background-size: cover;
-}
 
-picture{
-    width: 100px;
-    height: 100px;
-  }
+}
 
 .container {
   position: relative;
+
 }
 /*tekstblock "welkomtekst"*/
 .text-block {
@@ -76,11 +74,57 @@ footer {
    color: white;
    text-align: left;
    padding-left:10px;
+
+
 }
+/*CV textblock*/
+.CV-block {
+  height: 910px;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  color: black;
+}
+
+/*tabel "projects" page*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 55%;
+}
+
+td, th {
+  border: 1px solid #262626;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 /*responsive*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 .text-block {
-float: right;
-  width: 60%;
-  padding: 20px;
+position:absolute;
+left:10px;
+width:335px;
+}
+.topnav a {
+  padding: 15px 19.7px;
+}
+@media only screen and (max-width: 480px) {
+.CV-block {
+position:absolute;
+left:10px;
+width:335px;
+height: auto;
+}
+@media only screen and (max-width: 480px) {
+table {
+position:absolute;
+left:10px;
+width:335px;
+}
 }
