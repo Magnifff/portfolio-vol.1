@@ -34,7 +34,7 @@ body {
 html,body{
   margin:0;
   height:100%;
-  background-color: #00bfff;
+  background-color: #318ce7;
   background-size: cover;
 
 }
@@ -102,6 +102,9 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+own-img {
+  border-radius: 50%;
 }
 
 /*responsive*/
