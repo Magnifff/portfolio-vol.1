@@ -1,0 +1,16 @@
+body {background-color: #012456}
+input { background-color: #808080; color:black; width: 150px}
+.input-group-text {background-color:#808080; width:150px}
+.accordion-body {background-color: silver; color: black}
+.accordion-button {background-color: silver; color: black}
+.accordion-button:not(.collapsed) {background-color: white; color: black}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #23232E;
+    color: white;
+    text-align: left;
+   padding-left:10px;
+ }

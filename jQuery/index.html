@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+ <title>Schoonschip project</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Schoonschip.nl</a>
+    <a class="navbar-brand" href="meer.html">Meer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+<h5>Heeft u belang om schoon schip te maken? Dat kan! Doormiddel van jQuery is het mogelijk om elementen te laten varen. Uiteraard is het laten aanmeren ook een optie!</h5>
+</section>
+
+
+<h6 style="color:white">Klik hier om schoon schip te maken:</h6>
+
+<button id="hide">Varen</button>
+<button id="show">Aanmeren</button>
+
+      <p id="imageGallery"></p>
+
+<script type="text/javascript">
+  var images = ["AlbatunDos.jpg", "Batavia.jpg", "Schokker.jpg", "HalveMaen.jpg", "Spiegel.jpg", "Servant3.jpg"];
+  var imageGalleryOutput = "";
+
+  images.forEach(createImageGallery);
+
+  function createImageGallery(image) {
+    imageGalleryOutput += "<div class=gallery>";
+    imageGalleryOutput += "<a target=_blank href=images/" + image + ">";
+    imageGalleryOutput += "<image src=images/" + image + " width=500 height=400></a>";
+    imageGalleryOutput += "<div class=desc>Verhip.. een schip</div></div>";
+    }
+
+document.getElementById("imageGallery").innerHTML = imageGalleryOutput;
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("p").hide(1250);
+    });
+    $("#show").click(function(){
+      $("p").show(1250);
+    });
+  });
+  </script>
+
+<script>
+  $(document).ready(function(){
+      $("h5").hover(function(){
+          $(this).addClass("highlight");
+      }, function(){
+          $(this).removeClass("highlight");
+      });
+  });
+  </script>
+
+  <footer>
+  <div class="footer">
+    <h6>Bryan Kreeft | Alle rechten voorbehouden</h6>
+  </div>
+</footer>
+</head>
+</body>
+</html>

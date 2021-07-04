@@ -15,6 +15,15 @@ body {
   --transition-speed: 600ms;
 }
 
+.middle {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 body {
   color: black;
   background-color: #141418;
